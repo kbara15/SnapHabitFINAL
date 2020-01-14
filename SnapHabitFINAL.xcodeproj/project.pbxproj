@@ -18,6 +18,7 @@
 		37D87BEA23CD7B82008D4E81 /* UploadVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D87BE923CD7B82008D4E81 /* UploadVC.swift */; };
 		37D87BEC23CD7BB1008D4E81 /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D87BEB23CD7BB1008D4E81 /* SettingsVC.swift */; };
 		37D87BF123CD7FAB008D4E81 /* SnapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D87BF023CD7FAB008D4E81 /* SnapVC.swift */; };
+		37F8FE5923CDB0FD00AC0E8B /* UserSingleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F8FE5823CDB0FD00AC0E8B /* UserSingleton.swift */; };
 		E531945D652B8986FA7BE324 /* Pods_SnapHabitFINAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AAF77E7E321E6880D5929FF /* Pods_SnapHabitFINAL.framework */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +36,7 @@
 		37D87BE923CD7B82008D4E81 /* UploadVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadVC.swift; sourceTree = "<group>"; };
 		37D87BEB23CD7BB1008D4E81 /* SettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
 		37D87BF023CD7FAB008D4E81 /* SnapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapVC.swift; sourceTree = "<group>"; };
+		37F8FE5823CDB0FD00AC0E8B /* UserSingleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSingleton.swift; sourceTree = "<group>"; };
 		6AAF77E7E321E6880D5929FF /* Pods_SnapHabitFINAL.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SnapHabitFINAL.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C5419DADDAE5C4737C3E150 /* Pods-SnapHabitFINAL.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnapHabitFINAL.debug.xcconfig"; path = "Target Support Files/Pods-SnapHabitFINAL/Pods-SnapHabitFINAL.debug.xcconfig"; sourceTree = "<group>"; };
 		8D0E08CCBD6A2B69546A230D /* Pods-SnapHabitFINAL.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnapHabitFINAL.release.xcconfig"; path = "Target Support Files/Pods-SnapHabitFINAL/Pods-SnapHabitFINAL.release.xcconfig"; sourceTree = "<group>"; };
@@ -73,6 +75,7 @@
 		3730A93E23CD750600BF6E45 /* SnapHabitFINAL */ = {
 			isa = PBXGroup;
 			children = (
+				37F8FE5723CDB0C400AC0E8B /* Model */,
 				37D87BEF23CD7C0D008D4E81 /* Delegates */,
 				37D87BED23CD7BCC008D4E81 /* ViewControllers */,
 				3730A94523CD750600BF6E45 /* Main.storyboard */,
@@ -103,6 +106,14 @@
 				3730A94123CD750600BF6E45 /* SceneDelegate.swift */,
 			);
 			path = Delegates;
+			sourceTree = "<group>";
+		};
+		37F8FE5723CDB0C400AC0E8B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				37F8FE5823CDB0FD00AC0E8B /* UserSingleton.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		4D8A2078AED589FFCA13BA7B /* Frameworks */ = {
@@ -238,6 +249,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37F8FE5923CDB0FD00AC0E8B /* UserSingleton.swift in Sources */,
 				37D87BE823CD7B5C008D4E81 /* FeedVC.swift in Sources */,
 				3730A94423CD750600BF6E45 /* SignInVC.swift in Sources */,
 				3730A94023CD750600BF6E45 /* AppDelegate.swift in Sources */,
