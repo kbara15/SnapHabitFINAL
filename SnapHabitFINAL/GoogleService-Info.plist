@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>7506188126-fqeemps4sjpc8v34huopq16v3pkr9njo.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.7506188126-fqeemps4sjpc8v34huopq16v3pkr9njo</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDACg-iD-SG978---xp0ZaKyKZu-FBZ8QI</string>
+	<key>GCM_SENDER_ID</key>
+	<string>7506188126</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>kentbara.SnapHabitFINAL</string>
+	<key>PROJECT_ID</key>
+	<string>snaphabitfinal</string>
+	<key>STORAGE_BUCKET</key>
+	<string>snaphabitfinal.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:7506188126:ios:3ddf5c3b28f4e5ab4fe1cf</string>
+	<key>DATABASE_URL</key>
+	<string>https://snaphabitfinal.firebaseio.com</string>
+</dict>
+</plist>
