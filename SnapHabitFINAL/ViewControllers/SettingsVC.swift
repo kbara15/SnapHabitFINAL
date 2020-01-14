@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import Firebase
 class SettingsVC: UIViewController {
 
     override func viewDidLoad() {
@@ -28,5 +28,11 @@ class SettingsVC: UIViewController {
     */
 
     @IBAction func logoutClicked(_ sender: Any) {
+        do {
+            try Auth.auth().signOut()
+            self.performSegue(withIdentifier: "toSignInVC", sender: nil)
+        }catch{
+            
+        }
     }
 }

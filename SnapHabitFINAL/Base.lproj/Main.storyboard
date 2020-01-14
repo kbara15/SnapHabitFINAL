@@ -122,6 +122,9 @@
                         <viewLayoutGuide key="safeArea" id="tNM-2v-rOD"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Settings" image="s.circle.fill" catalog="system" id="XwT-Ad-eON"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="toSignInVC" modalPresentationStyle="fullScreen" id="d4m-fL-mg8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8fJ-kB-MSI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -135,7 +138,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="q47-MJ-Aqp">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="untitled (3)" translatesAutoresizingMaskIntoConstraints="NO" id="q47-MJ-Aqp">
                                 <rect key="frame" x="58" y="91" width="305" height="520"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2CT-fd-Ici">
@@ -238,7 +241,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="XWq-A0-8lW">
             <objects>
-                <tabBarController id="C8Q-fD-T10" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="tabBar" id="C8Q-fD-T10" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="vOF-Bm-qM7">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -259,5 +262,6 @@
         <image name="f.circle.fill" catalog="system" width="64" height="60"/>
         <image name="s.circle.fill" catalog="system" width="64" height="60"/>
         <image name="u.circle.fill" catalog="system" width="64" height="60"/>
+        <image name="untitled (3)" width="151" height="259"/>
     </resources>
 </document>
