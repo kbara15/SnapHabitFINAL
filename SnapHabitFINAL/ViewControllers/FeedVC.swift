@@ -8,15 +8,33 @@
 
 import UIKit
 import Firebase
-class FeedVC: UIViewController {
+class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet weak var tableview: UITableView!
     let fireStoreDatabase = Firestore.firestore()
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        tableview.delegate = self
+        tableview.dataSource = self
         // Do any additional setup after loading the view.
+        getSnapsFromFirebase()
         getUserInfo()
+    }
+    func getSnapsFromFirebase() {
+        fireStoreDatabase.collection("Snaps").order(by: "date", descending: true).addSnapshotListener { (snapshot, error) in
+            if error != nil {
+                self.makeAlert(title: "Error", message: error?.localizedDescription ?? "Error")
+            }else{
+                if snapshot?.isEmpty == false && snapshot != nil{
+                    for document in snapshot?.documents{
+                        
+                        
+                        
+                        
+                    }
+                }
+            }
+        }
     }
     func makeAlert(title: String, message: String){
            let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertController.Style.alert)
@@ -51,5 +69,12 @@ class FeedVC: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 10
+    }
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! FeedCell
+        cell.feedUserNameLabel.text = "test"
+        return cell
+    }
 }
