@@ -26,7 +26,7 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     func getSnapsFromFirebase() {
         fireStoreDatabase.collection("Snaps").order(by: "date", descending: true).addSnapshotListener { (snapshot, error) in
             if error != nil {
-                self.makeAlert(title: "Error", message: error?.localizedDescription ?? "Error")
+                self.makeAlert(title: "Error", message: error?.localizedDescription ?? "Error!")
             }else{
                 if snapshot?.isEmpty == false && snapshot != nil{
                     self.snapArray.removeAll(keepingCapacity: false)
@@ -34,7 +34,7 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
                         
                         let documentId = document.documentID
                         if let username = document.get("snapOwner") as? String{
-                            if let imageUrlArray = document.get("ImageUrlArray") as? [String]{
+                            if let imageUrlArray = document.get("imageUrlArray") as? [String]{
                                 if let date = document.get("date") as? Timestamp {
                                     
                                     if let difference = Calendar.current.dateComponents([.hour], from: date.dateValue(), to: Date()).hour{
@@ -64,12 +64,6 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
             }
         }
     }
-    func makeAlert(title: String, message: String){
-           let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertController.Style.alert)
-           let okButton = UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil)
-           alert.addAction(okButton)
-           self.present(alert, animated: true, completion: nil)
-       }
     
     func getUserInfo(){
         fireStoreDatabase.collection("UserInfo").whereField("email", isEqualTo: Auth.auth().currentUser!.email!).getDocuments { (snapshot, error) in
@@ -87,7 +81,12 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
             }
         }
     }
-
+    func makeAlert(title: String, message: String){
+           let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertController.Style.alert)
+           let okButton = UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil)
+           alert.addAction(okButton)
+           self.present(alert, animated: true, completion: nil)
+       }
     /*
     // MARK: - Navigation
 
