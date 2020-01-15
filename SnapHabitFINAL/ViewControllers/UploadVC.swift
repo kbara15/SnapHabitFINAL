@@ -62,15 +62,15 @@ class UploadVC: UIViewController, UIImagePickerControllerDelegate, UINavigationC
                                 }else{
                                     if snapshot?.isEmpty == false && snapshot != nil{
                                         for document in snapshot!.documents{
-                                            let documentID = document.documentID
+                                            let documentId = document.documentID
                                             if var imageUrlArray = document.get("imageUrlArray") as? [String]{
                                                 imageUrlArray.append(imageUrl!)
                                                 
                                                 let additionalDictionary = ["imageUrlArray" : imageUrlArray] as [String : Any]
-                                                fireStore.collection("Snaps").document(documentID).setData(additionalDictionary, merge: true) { (error) in
+                                                fireStore.collection("Snaps").document(documentId).setData(additionalDictionary, merge: true) { (error) in
                                                     if error == nil {
                                                         self.tabBarController?.selectedIndex = 0
-                                                        self.uploadImageView.image = UIImage(named: "untitled (3).imageset")
+                                                        self.uploadImageView.image = UIImage(named: "untitled (3).png")
                                                     }
                                                 }
                                             }
@@ -83,7 +83,7 @@ class UploadVC: UIViewController, UIImagePickerControllerDelegate, UINavigationC
                                                 self.makeAlert(title: "Error", message: error?.localizedDescription ?? "Error")
                                             }else{
                                                 self.tabBarController?.selectedIndex = 0
-                                                self.uploadImageView.image = UIImage(named: "untitled (3).imageset")
+                                                self.uploadImageView.image = UIImage(named: "untitled (3).png")
                                             }
                                     }
                                 }
