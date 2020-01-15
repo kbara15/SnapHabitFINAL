@@ -70,7 +70,7 @@ class UploadVC: UIViewController, UIImagePickerControllerDelegate, UINavigationC
                                                 fireStore.collection("Snaps").document(documentID).setData(additionalDictionary, merge: true) { (error) in
                                                     if error == nil {
                                                         self.tabBarController?.selectedIndex = 0
-                                                        self.uploadImageView.image = UIImage(named: "untitled (3).png")
+                                                        self.uploadImageView.image = UIImage(named: "untitled (3).imageset")
                                                     }
                                                 }
                                             }
@@ -83,7 +83,7 @@ class UploadVC: UIViewController, UIImagePickerControllerDelegate, UINavigationC
                                                 self.makeAlert(title: "Error", message: error?.localizedDescription ?? "Error")
                                             }else{
                                                 self.tabBarController?.selectedIndex = 0
-                                                self.uploadImageView.image = UIImage(named: "untitled (3).png")
+                                                self.uploadImageView.image = UIImage(named: "untitled (3).imageset")
                                             }
                                     }
                                 }
