@@ -18,6 +18,7 @@
 		37D87BEA23CD7B82008D4E81 /* UploadVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D87BE923CD7B82008D4E81 /* UploadVC.swift */; };
 		37D87BEC23CD7BB1008D4E81 /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D87BEB23CD7BB1008D4E81 /* SettingsVC.swift */; };
 		37D87BF123CD7FAB008D4E81 /* SnapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D87BF023CD7FAB008D4E81 /* SnapVC.swift */; };
+		37ED64A323CEA416002909FA /* Snap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37ED64A223CEA416002909FA /* Snap.swift */; };
 		37F8FE5923CDB0FD00AC0E8B /* UserSingleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F8FE5823CDB0FD00AC0E8B /* UserSingleton.swift */; };
 		37F8FE5B23CE9E4800AC0E8B /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F8FE5A23CE9E4800AC0E8B /* FeedCell.swift */; };
 		E531945D652B8986FA7BE324 /* Pods_SnapHabitFINAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AAF77E7E321E6880D5929FF /* Pods_SnapHabitFINAL.framework */; };
@@ -37,6 +38,7 @@
 		37D87BE923CD7B82008D4E81 /* UploadVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadVC.swift; sourceTree = "<group>"; };
 		37D87BEB23CD7BB1008D4E81 /* SettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
 		37D87BF023CD7FAB008D4E81 /* SnapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapVC.swift; sourceTree = "<group>"; };
+		37ED64A223CEA416002909FA /* Snap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Snap.swift; sourceTree = "<group>"; };
 		37F8FE5823CDB0FD00AC0E8B /* UserSingleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSingleton.swift; sourceTree = "<group>"; };
 		37F8FE5A23CE9E4800AC0E8B /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 		6AAF77E7E321E6880D5929FF /* Pods_SnapHabitFINAL.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SnapHabitFINAL.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -115,6 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				37F8FE5823CDB0FD00AC0E8B /* UserSingleton.swift */,
+				37ED64A223CEA416002909FA /* Snap.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -253,6 +256,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				37F8FE5923CDB0FD00AC0E8B /* UserSingleton.swift in Sources */,
+				37ED64A323CEA416002909FA /* Snap.swift in Sources */,
 				37D87BE823CD7B5C008D4E81 /* FeedVC.swift in Sources */,
 				3730A94423CD750600BF6E45 /* SignInVC.swift in Sources */,
 				3730A94023CD750600BF6E45 /* AppDelegate.swift in Sources */,
