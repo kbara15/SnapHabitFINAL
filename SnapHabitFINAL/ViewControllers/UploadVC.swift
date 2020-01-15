@@ -30,12 +30,7 @@ class UploadVC: UIViewController, UIImagePickerControllerDelegate, UINavigationC
         uploadImageView.image = info[.originalImage] as? UIImage
         self.dismiss(animated: true, completion: nil)
     }
-    func makeAlert(title: String, message: String){
-           let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertController.Style.alert)
-           let okButton = UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil)
-           alert.addAction(okButton)
-           self.present(alert, animated: true, completion: nil)
-       }
+    
     
     @IBAction func uploadClicked(_ sender: Any) {
         let storage = Storage.storage()
@@ -96,6 +91,11 @@ class UploadVC: UIViewController, UIImagePickerControllerDelegate, UINavigationC
             }
         }
     }
-    
+    func makeAlert(title: String, message: String){
+        let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertController.Style.alert)
+        let okButton = UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil)
+        alert.addAction(okButton)
+        self.present(alert, animated: true, completion: nil)
+    }
 
 }
